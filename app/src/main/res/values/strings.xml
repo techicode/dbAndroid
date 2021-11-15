@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Evaluación Database</string>
+    <string name="add_product_food">Add product / food</string>
+    <string-array name="planets_array">
+        <item>Seleccionar Categoria</item>
+        <item>Sandwich</item>
+        <item>Pizza</item>
+        <item>Combo</item>
+        <item>Chorrillana</item>
+    </string-array>
+</resources>
