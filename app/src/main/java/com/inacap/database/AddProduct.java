@@ -44,6 +44,8 @@ public class AddProduct extends AppCompatActivity {
                 if (categoria.getSelectedItemPosition() == 0) {
                     Toast.makeText(getApplicationContext(), "Debe seleccionar una categoria.",
                             Toast.LENGTH_LONG).show();
+                } else if (nombre.length() < 1 || precio.length() < 1 || ingredientes.length() < 1) {
+                    Toast.makeText(getApplicationContext(), "Debe rellenar todos los campos.", Toast.LENGTH_SHORT).show();
                 } else {
                     DatabaseHelper mydb = new DatabaseHelper(AddProduct.this);
                     mydb.addProduct(nombre.getText().toString().trim(),
